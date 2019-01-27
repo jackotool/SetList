@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 $server = "52.62.124.110";
 $username = "root";
 $password = "root";
-$db = "SongList";
+$db = "SetList";
 $conn = new mysqli($server, $username, $password, $db);
 $myArray = array();
 if ($result = $conn->query("select * from songs")) {
