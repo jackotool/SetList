@@ -8,7 +8,7 @@ $password = "root";
 $db = "SongList";
 $conn = new mysqli($server, $username, $password, $db);
 $myArray = array();
-if ($result = $conn->query("select * from so")) {
+if ($result = $conn->query("select * from songs")) {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
         $myArray[] = $row;
     }
