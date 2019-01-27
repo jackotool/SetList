@@ -2,13 +2,13 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 //Db DETAILS
-$server = "127.0.0.1";
+$server = "52.62.124.110";
 $username = "root";
 $password = "root";
 $db = "SongList";
 $conn = new mysqli($server, $username, $password, $db);
 $myArray = array();
-if ($result = $conn->query("select * from songs")) {
+if ($result = $conn->query("select * from so")) {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
         $myArray[] = $row;
     }
