@@ -2,4 +2,4 @@
 
 $app="setlist";
 
-echo "Set List";
+echo "Set List, ok";
