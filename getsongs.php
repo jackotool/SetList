@@ -15,9 +15,14 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 $myArray = array();
+
+
 if ($result = $conn->query("select * from songs")) {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
         $myArray[] = $row;
+        echo "found a record. ";
     }
+
+
     echo json_encode($myArray);
 }
