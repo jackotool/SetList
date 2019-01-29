@@ -17,7 +17,7 @@ echo "Connected successfully";
 $myArray = array();
 
 
-if ($result = $conn->query("select * from songs")) {
+if ($result = $conn->query("select * from Songs")) {
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
         $myArray[] = $row;
         echo "found a record. ";
