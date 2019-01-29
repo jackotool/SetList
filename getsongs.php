@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 //Db DETAILS
-$server = "52.62.124.110";
+$server = "127.0.0.1";
 $username = "root";
 $password = "root";
 $db = "SetList";
